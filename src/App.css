@@ -22,6 +22,91 @@
   font-size: large;
 }
 
+/*Header*/
+
+.header {
+  background-color: grey;
+  height: 90vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+}
+
+.header-text {
+  margin: 1em 0 .2em 0;
+}
+
+.header-title {
+  font-size: 2em;
+  font-family: 'Helvetiva';
+}
+
+.header-subtitle {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 5% 15%;
+}
+
+.header-learnmore {
+  font-family: Helvetica;
+}
+
+/*Social*/
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-link {
+  margin: 0 5px;
+}
+
+.icon-white {
+  color: white;
+}
+
+.icon-white:hover {
+  color: black;
+}
+
+/*Skills*/
+
+.skill-section {
+  width: 100%;
+  padding-top: 4vh;
+  padding-bottom: 7vh;
+  background-color: #567098;
+}
+
+.skill-header {
+  font-family: 'Lato';
+  display: inline-block;
+  border-bottom: 3px;
+  color: white;
+  text-decoration: underline;
+}
+
+.skills {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0 5%;
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+.skills > li {
+  border: 3px solid #e3dcdc;
+  background-color: #b3afaf;
+  color: black;
+  width: 7.8em;
+  padding: .3em;
+  margin: .3em;
+  font-weight: bold;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
