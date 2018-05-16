@@ -26,6 +26,7 @@ class Skills extends React.Component {
   handleScroll(e) {
     let scrollTop = e.target.scrollingElement.scrollTop;
     let animation = scrollTop > 300 ? 'fadeInUp' : '';
+
     this.setState({animateSkills: animation})
   }
 
