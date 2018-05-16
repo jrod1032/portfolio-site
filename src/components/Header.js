@@ -1,5 +1,6 @@
 import React from 'react';
 import Social from './Social.js'
+import '../App.css';
 
 const Header = (props) => (
   <header className="header fadeIn">
