@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 
 const socialLinks = [
 {
@@ -26,7 +27,11 @@ const Social = (props) => (
   <div className= 'social-links'>
     {socialLinks.map(social => {
       return <div className="social-link" key={social.name}>
-      <img src={social.image} alt={social.name}></img>
+      <a href={social.link}
+        className={props.iconColor}
+        target="_blank" rel="noopener noreferrer">
+        <img src={social.image} alt={social.name}></img>
+      </a>
       </div>
     })}
   </div>
