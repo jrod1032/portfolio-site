@@ -4,25 +4,26 @@ import '../App.css';
 const socialLinks = [
 {
   name: 'Github',
-  image: null,
-  favicon: null,
+  image: './images/github.png',
+  fa: 'fa-github',
   link: 'https://github.com/jrod1032'
 },
 {
   name: 'LinkedIn',
-  image: null,
-  favicon: null,
+  image: './images/linkedin.png',
+  fa: 'fa-linkedin',
   link: 'https://www.linkedin.com/in/jarrod-powell'
 },
 {
-  name: 'Instagram',
-  image: null,
-  favicon: null,
-  link: 'https://www.instagram.com/jrod1032/'
+  name: 'Twitter',
+  image: './images/twitter.png',
+  fa: null,
+  link: 'https://twitter.com/jpowell1032'
 }
 ]
-// <i className={`favicon ${social.favicon}`}aria-hidden="true"></i> 
-
+//  
+// 
+//<i className={`fa ${social.fa}`}aria-hidden="true"></i>
 const Social = (props) => (
   <div className= 'social-links'>
     {socialLinks.map(social => {

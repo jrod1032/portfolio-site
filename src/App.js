@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Navigation from './components/Navigation.js';
 import Header from './components/Header.js';
 import Skills from './components/Skills.js';
 import Projects from './components/Projects.js';
-import Other from './components/Other.js';
 import About from './components/About.js';
 import Footer from './components/Footer.js'
 
@@ -17,7 +15,6 @@ class App extends Component {
         <Header />
         <Skills />
         <Projects />
-        <Other />
         <About />
         <Footer />
       </div>

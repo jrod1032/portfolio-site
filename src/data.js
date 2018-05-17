@@ -36,7 +36,7 @@ export const projectInfo = [
     id: 4,
     name: 'Bart Transit Planner',
     description: 'A Bart transit planner application. Get real-time station departure times, and see step by step instructions on how to get to your destination!',
-    imageURL: './images/bart-transit.jpg',
+    imageURL: './images/bart-transit.png',
     altText: 'Bart Transit App Screenshot',
     orientation: 'portrait',
     github: 'https://github.com/jrod1032/Bart-Transit-App',

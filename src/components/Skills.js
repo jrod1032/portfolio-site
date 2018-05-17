@@ -4,7 +4,7 @@ import '../App.css';
 
 const mySkills = ['Javascript', 'React', 'Redux', 'ES6', 'Node.js', 'Express', 'Koa', 
 'MySQL', 'PostgreSQL', 'MongoDB', 'Redis', 'Elasticsearch', 'Webpack', 'Docker', 'AWS', 'D3', 
-'Git', 'HTML5', 'CSS' ];
+'Git', 'SoA', 'HTML5', 'CSS' ];
 
 class Skills extends React.Component {
   constructor(props) {
@@ -25,7 +25,7 @@ class Skills extends React.Component {
 
   handleScroll(e) {
     let scrollTop = e.target.scrollingElement.scrollTop;
-    let animation = scrollTop > 300 ? 'fadeInUp' : '';
+    let animation = scrollTop > 250 ? 'fadeInUp' : '';
 
     this.setState({animateSkills: animation})
   }

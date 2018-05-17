@@ -1,7 +1,11 @@
 import React from 'react';
+import Social from './Social.js';
 
 const Footer = (props) => (
-  <div>Footer</div>
+  <footer>
+    <Social iconColor="icon-white" />
+    <p>&copy;Jarrod Powell</p>
+  </footer>
   )
 
 export default Footer;

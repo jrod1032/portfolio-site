@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: apercu;
 }
 
 .App-logo {
@@ -11,7 +12,6 @@
   background-color: #222;
   height: 150px;
   padding: 20px;
-  color: white;
 }
 
 .App-title {
@@ -28,14 +28,133 @@ h1 {
 
 a {
   text-decoration: none;
-  color: #55caf9;
+  color: #ffdea6;
+}
+
+/*Navigation*/
+
+.nav {
+/*  width: 100%;*/
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 1em;
+}
+
+.nav-sticky {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+
+.nav-v1 {
+  background-color: #fffcf5;
+}
+
+.nav-v1 span {
+  font-size: 1em;
+}
+
+.nav-v2 {
+  background-color: #fffcf5;
+  box-shadow: 2px 2px 5px 1pc rbga(0, 0, 0, 0.1);
+  transition: all 1s ease;
+}
+
+.nav-v2 span {
+  color: #ffdea6;
+  font-size: 1em;
+  transition: all 1s ease;
+}
+
+.nav-v2 .nav-list {
+  margin: 0.9em 0 0 0;
+  transition: all 1s ease;
+}
+
+.nav-list {
+  list-style-type: none;
+  text-align: right;
+  display: inline-block;
+  padding: 0;
+  margin: 1em 0;
+}
+
+.nav-list > li {
+  display: inline-block;
+  padding: 0 0.5em;
+  color: #5a6175;
+}
+
+.nav-list a {
+  color: #5a6175;
+  position: relative;
+  /*padding-bottom: 0.4em;*/
+  cursor: pointer;
+  cursor: hand;
+}
+
+#logo {
+  display: inline-block;
+  border: 2px solid #5a6175;
+  border-radius: 50%;
+  padding: 0.3em;
+  margin: 0.4em 0 0.4em 0.2em;
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+  cursor: hand;
+  color: #5a6175;
+  font-size: 1.2em;
+}
+
+.nav-v2 #logo {
+  color: #5a6175;
+  font-size: 1.3em;
+  margin: 0.2em 0;
+  transition: all 1s ease;
+}
+
+@media (min-width: 550px) {
+  .nav-v1 span {
+    font-size: 1.3em;
+  }
+  .nav-v2 span {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 550px) {
+  #logo {
+    font-size: 1.8em;
+  }
+  .nav-list li {
+    padding: 0 1em;
+  }
+}
+
+@media (min-width: 650px) {
+  .nav {
+    padding: 0.5em 3.5em;
+  }
+  .nav-list li {
+    padding: 0 1.5em;
+  }
+}
+
+@media (min-width: 950px) {
+  .nav {
+    padding: 0.5em 6em;
+  }
 }
 /*Header*/
 
 .header {
-  background-color: grey;
+  /*background-color: #fffcf5;*/
+/*  background-image: url('./ecuador.jpg');
+  background-size: cover;*/
+  background: linear-gradient(to bottom, rgba(255,252,245,1) 0%,rgba(255,222,166,1) 100%);;
   height: 50vh;
-  color: white;
+  color: #5a6175;
   display: flex;
   flex-direction: column;
   padding: 10%;
@@ -47,7 +166,7 @@ a {
 
 .header-title {
   font-size: 3.2em;
-  font-family: 'Helvetiva';
+ /* font-family: 'Helvetiva';*/
 }
 
 .header-subtitle {
@@ -57,10 +176,19 @@ a {
 }
 
 .header-learnmore {
-  font-family: Helvetica;
+ /* font-family: Helvetica;*/
 }
 
-/*@media (min-width: 650px) {
+@media (min-width: 375px) {
+  .header-title {
+    font-size: 2.5em;
+  }
+  .header-subtitle {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 650px) {
   .header-title {
     font-size: 3.2em;
   }
@@ -83,7 +211,7 @@ a {
   .header-learnmore {
     font-size: 1.2em;
   }
-}*/
+}
 
 /*Social*/
 
@@ -97,7 +225,7 @@ a {
 }
 
 .icon-white {
-  color: white;
+  color: #5a6175;
 }
 
 .icon-white:hover {
@@ -110,15 +238,15 @@ a {
   width: 100%;
   padding-top: 4vh;
   padding-bottom: 7vh;
-  background-color: #567098;
+  background-color: #5a6175;
 }
 
 .skill-header {
-  font-family: 'Lato';
-  font-size: 2em;
+/*  font-family: 'Lato';*/
+  font-size: 3em;
   display: inline-block;
-  border-bottom: 3px solid blue;
-  color: white;
+/*  border-bottom: 3px solid blue;
+*/  color: #ffdea6;
 }
 
 .skills {
@@ -133,29 +261,30 @@ a {
 
 .skills > li {
   border: 3px solid #e3dcdc;
-  background-color: #b3afaf;
+  background-color: #fbeacf;
   color: black;
   width: 7.8em;
   padding: .3em;
   margin: .3em;
   font-weight: bold;
+  opacity: 0;
 }
 
 /*Projects*/
 
 .project-section {
-  background-color: white;
+  background-color: #69c8be;
   padding-top: 5vh;
   padding-bottom: 3vh;
-  color: #404040;
+  color: black;
 }
 
 .projects-header {
-  font-family: 'Lato';
+ /* font-family: 'Lato';*/
   font-size: 3em;
   display: inline-block;
-  border-bottom: 3px solid pink;
-  color: #404040;
+/*  border-bottom: 3px solid black;*/
+  color: #5a6175;
 }
 
 .projects-container {
@@ -167,7 +296,7 @@ a {
 }
 
 .project-card {
-  background-color: white;
+  background-color: #5a6175;
   max-width: 85%;
   margin: 2.5%;
   padding-bottom: 1em;
@@ -178,6 +307,7 @@ a {
   justify-content: space-between;
 /*  opacity: 0;
 */  line-height: 1.4em;
+  color: #fffcf5;
 }
 
 .project-card p {
@@ -188,6 +318,7 @@ a {
   width: 100%;
   height: 60vw;
   overflow: hidden;
+  border-bottom: 1px solid black;
 }
 
 .project-img-container > .landscape {
@@ -217,7 +348,7 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #2FC6EE;
+  background-color: #ffdea6;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
@@ -245,6 +376,62 @@ a {
     height: 20vw;
   }
 }
+
+/*About */
+
+.about-section {
+  background: #5f9dda;
+  padding: 5vh;
+  color: black;
+}
+
+.about-header {
+ /* font-family: 'Lato';*/
+  font-size: 3em;
+  display: inline-block;
+/*  border-bottom: 3px solid grey;*/
+  color: #ffdea6;
+}
+
+.round-border {
+  border-radius: 50%;
+}
+
+.profile-pic {
+  display: block;
+  margin: 0 auto;
+  width: 10%;
+  height: 10%;
+}
+
+.about-summary {
+  text-align: left;
+  line-height: 1.5em;
+  max-width: 750px;
+  margin: 0 auto;
+  color: #ffdea6;
+}
+
+.about-summary a {
+  color: #4CB6DF;
+  font-weight: bold;
+}
+
+@media (min-width: 650px) {
+  .project-card {
+    width: 40%;
+  }
+}
+
+/*Footer*/
+
+footer {
+/*  background-color: #fffcf5; */
+  background-color: rgba(255,222,166,1);
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  color: #5a6175;
+} 
 
 /*Animations*/
 
