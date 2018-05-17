@@ -55,15 +55,6 @@ class Navigation extends React.Component {
           </Link></li>
           <li><Link
           activeClass="active"
-          to="projects-element"
-          spy={true}
-          smooth={true}
-          duration={500}
-          offset={0}>
-          <span className={this.state.text}>Projects</span>
-          </Link></li>
-          <li><Link
-          activeClass="active"
           to="about-element"
           spy={true}
           smooth={true}
